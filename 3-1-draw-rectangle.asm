@@ -68,7 +68,7 @@ main PROC
     mov saveMode,al
     ; Switch to a graphics mode
     mov ah,0 ; set video mode
-    mov al,12h
+    mov al,12h ; 640 X 480, 16 colors
     int 10h
 
     DrawRectM 10,20,200,110,red
